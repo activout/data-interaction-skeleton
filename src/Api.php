@@ -35,7 +35,7 @@ class Api
         $settings->username = getenv('MYSQL_USERNAME');
         $settings->password = getenv('MYSQL_PASSWORD');
         $settings->host = getenv('MYSQL_HOST');
-        $settings->database = getenv('MYSQL_DATABASE') ?: $settings->username;
+        $settings->database = getenv('MYSQL_DATABASE');
         $settings->sslCa = getenv('MYSQL_SSL_CA');
         $settings->sslKey = getenv('MYSQL_SSL_KEY');
         $settings->sslCert = getenv('MYSQL_SSL_CERT');
